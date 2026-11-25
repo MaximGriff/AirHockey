@@ -1,0 +1,6 @@
+@AirHockey.Server_HostAddress = http://localhost:5054
+
+GET {{AirHockey.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
