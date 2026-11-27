@@ -1,3 +1,4 @@
+using AirHockey.Server.Hubs;
 using AirHockey.Server.Services;
 using Microsoft.AspNetCore.Identity;
 
@@ -13,6 +14,7 @@ var app = builder.Build();
 
 
 app.MapGet("/", () => "AirHockey server is running");
+app.MapHub<GameHub>("/gamehub");
 
 
 app.Run();
